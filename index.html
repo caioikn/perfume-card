@@ -16,9 +16,14 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <div class="card">
-            <img src="./img/image-product-desktop.jpg" alt="Perfume">
+            <div class="card-imagem">
+                <picture>
+                    <source media="(min-width: 600px)" srcset="./img/image-product-desktop.jpg">
+                    <img sizes="cover" src="./img/image-product-mobile.jpg" alt="Perfume">
+                </picture>
+            </div>
 
             <div class="card-info">
                 <span class="subtitulo linha">Perfume</span>
@@ -29,13 +34,13 @@
                     <span>$169.99</span>
                 </div>
 
-                <div class="botao linha">
-                    <img src="./img/icon-cart.svg" alt="Ícone carrinho">
-                    <a href="#">Add to Cart</a>
-                </div>
+                <button class="botao linha">
+                    <img src="./img/icon-cart.svg" alt aria-hidden="true">
+                    Add to Cart
+                </button>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
